@@ -2,9 +2,13 @@ const model = require("../models/transactions")
 const {v4:uuidv4} = require("uuid");
 exports.getTrans = (req, res) => {
     let {id_user, limit, sort, page} = req.query
-    if(page !== 1){
-        page = (page - 1) * limit + 1
+    if(page === 1){
+        page = 0
+    }else{
+        page = (page - 1) * limit 
     }
+    limit = Number(limit)
+    console.log(limit);
     if(sort == "Sort" || sort == undefined){
         if(limit == undefined){
             model.getTrans(id_user, limit, page)
