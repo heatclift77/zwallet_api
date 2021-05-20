@@ -63,7 +63,7 @@ const user = {
                     connection.query(`INSERT INTO wallet 
                     (id_wallet, id_user, saldo, pin, email) 
                     VALUES
-                    ('${id_wallet}', '${id_user}', '100000', '${pin}', '${email}')`, (err, results)=>{
+                    ('${id_wallet}', '${id_user}', '10000', '${pin}', '${email}')`, (err, results)=>{
                         if(!err){
                             resolve({
                                 message : "Register Berhasil",
