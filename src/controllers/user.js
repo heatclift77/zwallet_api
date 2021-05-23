@@ -44,6 +44,7 @@ exports.register = (req, res, next) => {
         model.register(id_wallet, id_user, hash, email, pin, username, img_profil_default)
         .then(response => {
             res.status(response.status).json({message : response.message})
+            console.log(response.status);
             next()
         })
         .catch(err => {
