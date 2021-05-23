@@ -3,13 +3,13 @@
  <img width=400px height=300px src="https://i.ibb.co/PWw6SGx/image-2021-04-19-075223.png" alt="logo"></a>
 </p>
 
-<h3 align="center">Backend Tickitz - Arkademy</h3>
+<h3 align="center">Backend ZWALLET - Arkademy</h3>
 
 
 ># About
-Backend Project Zwallet Apps
+THIS PROJECT FOR ZWALLET APP, TASK FROM ARKADEMY
 
-># Build With
+## 🔖Build With
 
 * Node Js
 * Express JS
@@ -19,7 +19,7 @@ Backend Project Zwallet Apps
 
 <br>
 
-># How To Use ?
+## 💻 How To Install?
 ### Clone This Repo
 ```
 git clone https://github.com/therevolt/Zwallet-Backend.git
@@ -27,23 +27,22 @@ git clone https://github.com/therevolt/Zwallet-Backend.git
 ### Go To Folder
 Open GitBash / Terminal
 ```
-cd Zwallet-Backend
+cd zwallet_api
 ```
-### Run Project
-##### For Development
+### install package
+```
+npm install
+```
+##### development
 ```
 npm run dev
 ```
-##### For Production
-```
-node app.js
-```
 
-># Documentation
-### Postman : comming soon
+## Documentation
+Coming soon
 
-># FrontEnd Repo
-### Github : https://github.com/heatclift77/zwallet
+## FrontEnd
+Github : https://github.com/heatclift77/zwallet
 
-># Live Demo
+## 💻 Live Demo
 Coming soon
