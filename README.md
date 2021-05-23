@@ -6,8 +6,11 @@
 <h3 align="center">Backend ZWALLET - Arkademy</h3>
 
 
-># About
+## About
 THIS PROJECT FOR ZWALLET APP, TASK FROM ARKADEMY
+
+## Schema
+<img src="https://iili.io/BkPlqJ.jpg" alt="logo"></a>
 
 ## 🔖Build With
 
