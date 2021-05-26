@@ -36,7 +36,7 @@ const transaction = {
     },
     getDetailTrans : (id_transaction) =>{
         return new Promise((resolve, reject)=>{
-            connection.query(`SELECT * FROM transaction WHERE id_transaction='${id_transaction}'`, (err, results) => {
+            connection.query(`SELECT phoneNumber, amount, date, notes, username, img_profil FROM transaction INNER JOIN user ON transaction.id_reciever = user.id_user WHERE id_transaction='${id_transaction}'`, (err, results) => {
                 if(!err){
                     resolve({
                         data : results[0],
