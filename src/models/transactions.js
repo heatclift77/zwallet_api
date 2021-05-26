@@ -34,7 +34,7 @@ const transaction = {
             })
         })
     },
-    getTrans : (id_transaction) =>{
+    getDetailTrans : (id_transaction) =>{
         return new Promise((resolve, reject)=>{
             connection.query(`SELECT * FROM transaction WHERE id_transaction='${id_transaction}'`, (err, results) => {
                 if(!err){
