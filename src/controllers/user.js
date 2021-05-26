@@ -40,7 +40,7 @@ exports.register = (req, res, next) => {
         const id_user = uuidv4()
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync(password, salt);
-        const img_profil_default = `${process.env.APP}/img/default.jpg`
+        const img_profil_default = `${process.env.DIR_IMG}/default.jpg`
         model.register(id_wallet, id_user, hash, email, pin, username, img_profil_default)
         .then(response => {
             res.status(response.status).json({message : response.message})

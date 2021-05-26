@@ -34,6 +34,23 @@ const transaction = {
             })
         })
     },
+    getTrans : (id_transaction) =>{
+        return new Promise((resolve, reject)=>{
+            connection.query(`SELECT * FROM transaction WHERE id_transaction='${id_transaction}'`, (err, results) => {
+                if(!err){
+                    resolve({
+                        data : results[0],
+                        status : 200
+                    })
+                }else{
+                    reject({
+                        message : err,
+                        status : 500
+                    })
+                }
+            })
+        })
+    },
     getTransTodayLimit : (id_user, limit, page) =>{
         return new Promise((resolve, reject)=>{
             connection.query(`SELECT id_transaction, username, img_profil, amount FROM transaction INNER JOIN user ON transaction.id_reciever=user.id_user WHERE transaction.id_user='${id_user}' AND dayofweek(transaction.date) = dayofweek(now()) LIMIT ${limit} OFFSET ${page}`, (err, results) => {

@@ -1,14 +1,13 @@
 const model = require("../models/transactions")
 const {v4:uuidv4} = require("uuid");
 exports.getTrans = (req, res) => {
-    let {id_user, limit, sort, page} = req.query
+    let {id_user, limit, sort, page, id_transaction} = req.query
     if(page === 1){
         page = 0
     }else{
         page = (page - 1) * limit 
     }
     limit = Number(limit)
-    console.log(limit);
     if(sort == "Sort" || sort == undefined){
         if(limit == undefined){
             model.getTrans(id_user, limit, page)
@@ -55,6 +54,15 @@ exports.getTrans = (req, res) => {
         }else{
             res.status(400).json({message : "metode pengurutan tidak di dukung"})
         }
+    }
+    if(id_transaction !== undefined){
+        model.getDetailTrans(id_transaction)
+        .then(response => {
+            res.status(response.status).json({data : response.data})
+        })
+        .catch(err=> {
+            res.status(err.status).json({message : err.message})
+        })
     }
 }
 exports.setSaldoReciever = (req, res, next) => {
