@@ -22,6 +22,32 @@ THIS PROJECT FOR ZWALLET APP, TASK FROM ARKADEMY
 
 <br>
 
+#### User Endpoint
+
+|  METHOD  |             API             |                    REMARKS                    |
+| :------: | :-------------------------: | :-------------------------------------------: |
+|  `POST`  |       /user/register        |      Register User and Activation Email       |
+|  `POST`  |        /user/login          |        Sign in with a verified account        |
+|  `POST`  |        /user/cekPin         |      cek Pin for authentication and security  |
+|  `GET`   |        /user/saldo          |          get saldo from wallet by email       |
+|  `GET`   |       /user/search          |              Get data user by name            |
+|  `GET`   |       /user/cekAcount       |              cek Validation account           |
+|  `GET`   |       /user/cekToken  |              verification new email which has been registered        |
+|  `GET`   |       /user//verifycation/:email  |     verification new email which has been registered     |
+|  `PUT`   |       /user/                |             update user profile               |
+|  `PUT`   |       /user/changePin       |             change pin user                   |
+|  `PUT`   |       /user/changeImage     |             change profile image user         |
+
+#### Transaction Endpoint
+
+|  METHOD  |       API        |          REMARKS           |
+| :------: | :--------------: | :------------------------: |
+|  `POST`  |     /transaction    | Transfer |
+|  `GET`   | /transaction |    Get List Transaction   |
+|  `GET`   | /transaction/details |    get transaction by id    |
+
+
+
 ## 💻 How To Install?
 ### Clone This Repo
 ```
