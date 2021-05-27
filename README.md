@@ -62,6 +62,30 @@ cd zwallet_api
 ```
 npm install
 ```
+### Create env file
+
+```
+# ---------------------------------------
+#               CONFIG DB
+# ---------------------------------------
+HOST=xxxx
+user=xxxx
+DBS=zwallet
+DB_PASS=xxxx
+# ---------------------------------------
+#            CONFIG GENERAL
+# ---------------------------------------
+PORT=xxxx
+SERVER=http://localhost:xxxx/v1/
+APP=http://localhost:xxxx
+PRIVATE_KEY=xxxxxxx
+DIR_IMG=https:http://localhost:xxxx/img
+```
+Detail CONFIG GENERAL
+| EXAMPLE URL | [http://localhost:5000]() |
+| :-------------: |:-------------:|
+| PORT | 5000 |
+| HOST | [http://localhost]() |
 ##### development
 ```
 npm run dev
