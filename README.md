@@ -25,7 +25,7 @@ THIS PROJECT FOR ZWALLET APP, TASK FROM ARKADEMY
 ## 💻 How To Install?
 ### Clone This Repo
 ```
-git clone https://github.com/therevolt/Zwallet-Backend.git
+git clone https://github.com/heatclift77/zwallet_api.git
 ```
 ### Go To Folder
 Open GitBash / Terminal
@@ -48,4 +48,4 @@ Coming soon
 Github : https://github.com/heatclift77/zwallet
 
 ## 💻 Live Demo
-Coming soon
+https://zwallet-heatclift77.vercel.app
