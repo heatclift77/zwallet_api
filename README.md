@@ -54,7 +54,6 @@ THIS PROJECT FOR ZWALLET APP, TASK FROM ARKADEMY
 git clone https://github.com/heatclift77/zwallet_api.git
 ```
 ### Go To Folder
-Open GitBash / Terminal
 ```
 cd zwallet_api
 ```
